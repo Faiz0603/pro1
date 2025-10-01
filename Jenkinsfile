@@ -15,7 +15,7 @@ pipeline{
         }
         stage('codetesting with akshat'){
             steps{
-                sh 'mvn test'
+                sh 'mvn clean test'
             }
         }
         stage('qa with akshat'){
@@ -40,5 +40,6 @@ pipeline{
         }   
     }
 }
+
 
 
