@@ -25,7 +25,7 @@ pipeline{
         }
         stage('package with akshat'){
             steps{
-                sh 'mvn install package'
+                sh 'mvn clean package'
             }
         }
         stage('run dockerfile'){
@@ -40,6 +40,7 @@ pipeline{
         }   
     }
 }
+
 
 
 
